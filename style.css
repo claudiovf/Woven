@@ -93,6 +93,11 @@
     transition: color 0.5s ease;
     letter-spacing: 5px;
 }
+@media screen and (max-height: 700px) {
+    .list-item a {
+        font-size: 2rem;
+    }
+}
 .list-item a:hover {
     color: rgba(0, 0, 0, 0.877);
 }
