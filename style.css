@@ -1,9 +1,6 @@
 
-@font-face {
-    font-family: FontName1;
-    src: url("Lato.eot"); /* IE */
-    src: local('Lato'), url('/Users/brittany/Library/Fonts/Lato-Light.ttf') format('truetype'); /* others */
-  }
+@font-face { font-family: Lato ; src: url('fonts/Lato/Lato-Regular.ttf'); } 
+@font-face { font-family: "Crimson Text" ; src: url('fonts/Crimson_Text/CrimsonText-Regular.ttf'); } 
 
 .body {
     background-color: #E5E5E5;
