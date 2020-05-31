@@ -70,7 +70,7 @@
     padding: 0;
 }
  .list-item {
-     height: 5rem;
+     height: 6em;
     list-style: none;
     display: flex;
     flex-direction: column;
