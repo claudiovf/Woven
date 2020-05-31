@@ -314,6 +314,21 @@
     position: relative;
     
 }
+
+@media screen and (max-width: 800px) {
+    .front-about {
+      flex-direction: column;
+      height: max-content;
+      align-items: center;
+    }
+    .left-front-about {
+        padding: 0;
+        justify-content: center;
+    }
+    .right-front-about {
+        padding: 0;
+    }
+  }
 .left-front-about {
     width: 50%;
     display: flex;
@@ -414,7 +429,7 @@
     width: 42vw;
     max-width: 800px;
     height: 70vh;
-    max-height: 800px;
+    max-height: 700px;
     background-color: white;
     margin-top: 3rem;   
     color: transparent;
@@ -423,17 +438,6 @@
     display: flex;
     flex-direction: column;
 }
-@media screen and (max-width: 800px) {
-    .front-gallery-items {
-      flex-flow: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .front-gallery-panel {
-        width: 90%;
-        max-width: 500px;
-    }
-  }
 
 .panel-image {
     height: 65%;
@@ -441,6 +445,7 @@
     background-size: cover;
     background-position: center;
     display: flex;
+    flex: 2;
     flex-direction: row;
     overflow: hidden;
     position: relative;
@@ -487,13 +492,38 @@
     width: 100%;
     color: black;
     display: flex;
+    flex: 1;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width: 800px) {
+    .front-gallery-items {
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .front-gallery-panel {
+        width: 90%;
+        max-width: 500px;
+    }
+    .panel-bar {
+        flex: 2;
+    }
+    .description{
+        font-size: 5px;
+    }
+    .article {
+        font-size: 15px;
+    }
+  }
 
-
+  @media screen and (max-width: 1200px) {
+    .panel-bar {
+        flex: 2;
+    }
+  }
 .bar-container {
     width: 90%;
     height: 90%;
@@ -550,6 +580,29 @@
     position: relative;
 }
 
+@media screen and (max-width: 800px) {
+    .front-gallery-items {
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .front-gallery-panel {
+        width: 90%;
+        max-width: 500px;
+    }
+    .panel-bar {
+        flex: 2;
+    }
+    .description{
+        font-size: 11px;
+    }
+    .article {
+        font-size: 15px;
+    }
+    .date {
+        font-size: 11px;
+    }
+  }
 
 .see-all {
     width: 100%;
