@@ -23,7 +23,7 @@
 
 .overlay {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     position: relative;
     z-index: 998;
     background-size: cover;
