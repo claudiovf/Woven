@@ -56,7 +56,6 @@
                  display 0.3s ease;
     display: none;
     padding-top: 10%;
-    overflow-y: visible;
 }
 .active-menu {
     visibility: visible;
