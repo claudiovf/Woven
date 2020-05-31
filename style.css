@@ -23,7 +23,7 @@
 
 .overlay {
     width: 100vw;
-    height: auto;
+    height: 100vh;
     position: relative;
     z-index: 998;
     background-size: cover;
@@ -52,7 +52,8 @@
     flex-direction: column;
     justify-content: center;
     visibility: hidden;
-    transition:  visibility 0.3s ease;
+    transition:  visibility 0.3s ease,
+                 display 0.3s ease;
     display: none;
     padding-top: 10%;
     overflow-y: visible;
