@@ -567,6 +567,9 @@
         width: 90%;
         max-width: 500px;
     }
+    .panel-image {
+        flex: 2;
+    }
     .panel-bar {
         flex: 2;
     }
