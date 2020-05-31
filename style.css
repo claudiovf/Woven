@@ -492,7 +492,6 @@
     width: 100%;
     color: black;
     display: flex;
-    flex: 1;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
