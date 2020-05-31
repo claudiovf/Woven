@@ -52,7 +52,7 @@
     visibility: hidden;
     transition:  visibility 0.3s ease;
     display: none;
-    padding-top: 15vh;
+    padding-top: 10vh;
 }
 .active-menu {
     visibility: visible;
