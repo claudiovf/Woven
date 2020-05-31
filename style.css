@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: FontName1;
+    src: url("Lato.eot"); /* IE */
+    src: local('Lato'), url('/Users/brittany/Library/Fonts/Lato-Light.ttf') format('truetype'); /* others */
+  }
 
 .body {
     background-color: #E5E5E5;
@@ -190,6 +195,11 @@
     background-color: rgb(26, 161, 112);
     color: whitesmoke;
 }
+
+
+/*
+   START OF VISIBLE CONTENT
+*/
 .header {
     background-color: white;
     width: 100vw;
@@ -236,7 +246,7 @@
 }
 
 .home {
-    height: 7vh;
+    height: 6vh;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -245,7 +255,7 @@
 
 .logo {
     width: 40%;
-    height: auto;
+    height: 80%;
 }
 .right-nav {
     height: 7vh;
@@ -346,6 +356,7 @@
 .front-gallery {
     background-color: #E5E5E5;
     width: 88%;
+    max-width: 1400px;
     padding-right: 6vw;
     padding-left: 6vw;
     height: auto;
