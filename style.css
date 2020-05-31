@@ -580,11 +580,7 @@
         font-size: 11px;
     }
   }
-  @media screen and (max-width: 1200px) {
-    .panel-bar {
-        flex: 2;
-    }
-  }
+
 .see-all {
     width: 100%;
     height: 10vh;
