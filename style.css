@@ -488,7 +488,7 @@
 
 .panel-bar {
     height: 35%;
-    min-height: 200px; 
+    min-height: max-content;
     max-height: 45%;
     width: 100%;
     color: black;
