@@ -498,32 +498,9 @@
     justify-content: center;
     align-items: center;
 }
-@media screen and (max-width: 800px) {
-    .front-gallery-items {
-      flex-flow: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .front-gallery-panel {
-        width: 90%;
-        max-width: 500px;
-    }
-    .panel-bar {
-        flex: 2;
-    }
-    .description{
-        font-size: 5px;
-    }
-    .article {
-        font-size: 15px;
-    }
-  }
 
-  @media screen and (max-width: 1200px) {
-    .panel-bar {
-        flex: 2;
-    }
-  }
+
+
 .bar-container {
     width: 90%;
     height: 90%;
@@ -558,7 +535,7 @@
     width: 15rem;
     font-family: "Crimson Text";
     font-weight: regular;
-    font-size: 25px;
+    font-size: 3ex ;
     margin-top: 1rem;
     border-bottom: 2.5px solid rgb(26, 161, 112);
     letter-spacing: 1.5px;
@@ -603,7 +580,11 @@
         font-size: 11px;
     }
   }
-
+  @media screen and (max-width: 1200px) {
+    .panel-bar {
+        flex: 2;
+    }
+  }
 .see-all {
     width: 100%;
     height: 10vh;
