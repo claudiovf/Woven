@@ -355,6 +355,7 @@ html {
     margin-top: -1rem;
 }
 
+
 .home {
     height: 5rem;
     flex: 1;
@@ -393,6 +394,17 @@ html {
     flex-direction: column;
     justify-content: center;
     color: rgb(0, 0, 0);
+}
+@media screen and (max-width: 600px) {
+    .menu {
+        width: 10rem;
+    }
+    .shop {
+        display: none;
+    }
+    .cart {
+        width: 5rem;
+    }
 }
 
 /*START OF CONTENT */
