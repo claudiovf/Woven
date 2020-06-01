@@ -638,8 +638,7 @@ html {
 }
 .artist {
     color: rgb(100, 100, 100);
-    font-weight: 300;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: Lato;
     letter-spacing: 1.5px;
 
@@ -647,7 +646,7 @@ html {
 .categ {
     color: rgb(0, 0, 0);
     font-weight: light;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: "Lato";
     padding-left: 5px;
     letter-spacing: 1.5px;
