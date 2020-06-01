@@ -106,6 +106,16 @@ $(window).scroll(function() {
 
   mainMenu.addEventListener('click', toggleMenu);
   searchNav.addEventListener('click', toggleSearch);
+
+  let searchField = document.getElementById('search-field');
+
+  function clearField() {
+      searchField.value = "";
+      searchField.style.color = "black";
+      searchField.removeEventListener('keydown', clearField);
+  }
+
+  searchField.addEventListener('keydown', clearField);
   
 $('.shop').on('mouseenter', function(event) {
     if (

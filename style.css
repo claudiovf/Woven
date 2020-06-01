@@ -356,6 +356,9 @@ html {
     background-color: transparent;
     
 }
+textarea:focus, input:focus{
+    outline: none;
+}
 
 #search-submit {
     border: 2px solid rgb(26, 161, 112);
@@ -367,10 +370,22 @@ html {
     font-size: 2rem;
 
 }
+.search-tip {
+    color: black;
+    font-family: "Lato";
+    font-size: 1.3rem;
+    width: 40rem;
+}
+.search-tip span {
+    color: rgb(26, 161, 112);
+}
 @media screen and (max-width: 500px) {
     #search-field {
         width: 25rem;
         font-size: 2rem;
+    }
+    .search-tip {
+        width: 20rem;
     }
 }
 /*
