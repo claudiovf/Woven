@@ -213,7 +213,7 @@ html {
     min-height: 367px;
     width: 100%;
     top: 0;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     position: relative;
@@ -231,7 +231,6 @@ html {
     transform: translateY(0%);
     transition: transform 0.5s ease-out,
                 visibility 1s ease-out;
-    display: flex;
 }
 
 .shop-slide {
@@ -325,7 +324,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: fixed;
     visibility: hidden;
     margin: 0;
     background-position-y: top;
@@ -457,6 +456,7 @@ html {
     background-image: url("images/magnifier.png");
     background-size: cover;
     background-position: center;
+    transition: all 0.4s ease-out;
 }
 .cart {
     width: 10rem;
@@ -901,61 +901,109 @@ html {
 }
 
 
-            /*
-                START OF HAMBURGER
-                */
-                .icon-wrap {
-                    height: 1.2em;
-                    max-width: 2.5em;
-                    display: flex;
-                    flex-direction: column;
-                    flex: 1;
-                    justify-content: space-between;
-                    align-items: center;
-                }
-                .top-burger {
-                    transition: all 0.5s;
-                    width: 25px;
-                    height: 3px;
-                    background-color: black;
-                    display: inline-block;
-                    position: relative;
-            
-                }
-                .top-burger-active {
-                    transition: all 0.5s;
-                    width: 25px;
-                    height: 3px;
-                    transform: rotate(45deg);
-                    -webkit-transform: rotate(45deg);
-                    top: 0.55em;
-                }
-                .mid-burger {
-                    transition: all 0.5s;
-                    width: 25px;
-                    height: 3px;
-                    background-color: black;
-                    display: inline-block;
-                    position: relative;
-            
-                }
-                .mid-burger-active {
-                    opacity: 0;
-                }
-                .bottom-burger {
-                    transition: all 0.5s;
-                    width: 25px;
-                    height: 3px;
-                    background-color: black;
-                    display: inline-block;
-                    position: relative;
-            
-                }
-                .bottom-burger-active {
-                    transform: rotate(-45deg);
-                    -webkit-transform: rotate(-45deg);
-                    top: -0.5em;
-                }
-                            /*
-                    END OF HAMBURGER
-                    */
+/*
+START OF HAMBURGER
+*/
+.icon-wrap {
+height: 1.2em;
+max-width: 2.5em;
+display: flex;
+flex-direction: column;
+flex: 1;
+justify-content: space-between;
+align-items: center;
+}
+.top-burger {
+transition: all 0.5s;
+width: 25px;
+height: 3px;
+background-color: black;
+display: inline-block;
+position: relative;
+
+}
+.top-burger-active {
+transition: all 0.5s;
+width: 25px;
+height: 3px;
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+top: 0.55em;
+}
+.mid-burger {
+transition: all 0.5s;
+width: 25px;
+height: 3px;
+background-color: black;
+display: inline-block;
+position: relative;
+
+}
+.mid-burger-active {
+opacity: 0;
+}
+.bottom-burger {
+transition: all 0.5s;
+width: 25px;
+height: 3px;
+background-color: black;
+display: inline-block;
+position: relative;
+
+}
+.bottom-burger-active {
+transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+top: -0.5em;
+}
+        /*
+END OF HAMBURGER
+*/
+
+.icon-search {
+    height: 1.2em;
+    max-width: 2.5em;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-line {
+    transition: all 0.2s;
+    width: 25px;
+    height: 3px;
+    background-color: rgb(129, 129, 129);
+    display: inline-block;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+
+}
+.top-line-active {
+    width: 25px;
+    height: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    top: 0.65em;
+    visibility: visible;
+    opacity: 1;
+}
+.bottom-line {
+    transition: all 0.2s;
+    width: 25px;
+    height: 3px;
+    background-color: rgb(129, 129, 129);
+    display: inline-block;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+
+}
+.bottom-line-active {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    top: -0.5em;
+    visibility: visible;
+    opacity: 1;
+}
