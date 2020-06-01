@@ -75,17 +75,17 @@ html {
     padding: 0;
 }
 .menu-spacer {
-    height: 10rem;
-    min-height: 10vh;
+    height: 10%;
+    /* min-height: 10vh; */
     width: 100%;
     display: block;
 }
  .list-item {
-     height: 7rem;
+     height: 8rem;
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .list-item p {
