@@ -41,6 +41,8 @@ $(window).scroll(function() {
   const mainMenu = document.getElementById('main-menu');
   let overlay = document.getElementById('overlay');
   let menuOverlay = document.getElementById('menuOverlay');
+  let searchNav = document.getElementById('search');
+  let searchOverlay = document.getElementById('search-overlay');
 
 
   function toggleMenu() {
@@ -49,13 +51,22 @@ $(window).scroll(function() {
     console.log('hello');
   }
 
-  mainMenu.addEventListener('click', toggleMenu);
+  function toggleSearch() {
+      overlay.classList.toggle('active2');
+      searchOverlay.classList.toggle('active-search');
 
+  }
+
+  mainMenu.addEventListener('click', toggleMenu);
+  searchNav.addEventListener('click', toggleSearch);
   
 $('.shop').on('mouseenter', function(event) {
-    if (!$('.menu').hasClass('active') && !$('.menu-overlay').hasClass('active-menu')) {
-        $('.overlay').addClass('active')
-        $('.shop-overlay').addClass('active-shop');
+    if (
+        !$('.menu').hasClass('active') && 
+        !$('.menu-overlay').hasClass('active-menu') &&
+        !$('.search-overlay').hasClass('active-search')) {
+            $('.overlay').addClass('active')
+            $('.shop-overlay').addClass('active-shop');
     }
 });
 
