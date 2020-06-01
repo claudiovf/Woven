@@ -658,7 +658,7 @@ html {
     width: 25rem;
     font-family: "Crimson Text";
     font-weight: regular;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-top: 1rem;
     border-bottom: 2.5px solid rgb(26, 161, 112);
     letter-spacing: 1.5px;
@@ -669,7 +669,7 @@ html {
     flex: 1;
     color: rgb(0, 0, 0);
     font-weight: light;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: "Lato";
     margin-top: 5px;
     letter-spacing: 1.5px;
@@ -679,7 +679,7 @@ html {
     flex: 2;
     position: relative;
     font-family: "Crimson Text";
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-style: italic;
 }
 
