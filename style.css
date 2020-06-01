@@ -81,7 +81,7 @@ html {
     display: block;
 }
  .list-item {
-     height: 7rem;
+     height: 10rem;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -91,14 +91,14 @@ html {
 .list-item p {
     font-family: "Crimson Text";
     font-style: italic;
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin-bottom: -10px;
     color: rgb(26, 161, 112);
 }
 .list-item a {
     color: rgba(0, 0, 0, 0.151);
     font-weight: "Regular";
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-family: "Lato";
     transition: color 0.5s ease;
     letter-spacing: 5px;
@@ -186,7 +186,7 @@ html {
     font-family: "Crimson Text";
     font-style: italic;
     color: black;
-    padding-top: 2rem;
+    padding-top: 1.7rem;
 }
 .social a {
     width: 9rem;
