@@ -558,9 +558,9 @@ html {
     }
 }
 .front-gallery-panel {
-    width: 42vw;
+    width: 38vw;
     max-width: 600px;
-    height: 70vh;
+    height: 65vh;
     max-height: 700px;
     background-color: white;
     margin-top: 3rem;   
