@@ -204,7 +204,8 @@ html {
 */
 
 .shop-overlay {
-    height: 65vh;
+    height: 45rem;
+    min-height: 367px;
     width: 100%;
     top: 0;
     display: flex;
