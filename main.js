@@ -15,6 +15,29 @@ $(window).scroll(function() {
     });
   });
 
+    $('.icon-wrap').on('click', function(event) {
+        if (!$('.top-burger').hasClass('top-burger-active')) {
+            $('.top-burger').addClass('top-burger-active');
+        }else{
+            $('.top-burger').removeClass('top-burger-active');
+        }
+    })
+    $('.icon-wrap').on('click', function(event) {
+        if (!$('.mid-burger').hasClass('mid-burger-active')) {
+            $('.mid-burger').addClass('mid-burger-active');
+        }else{
+            $('.mid-burger').removeClass('mid-burger-active');
+        }
+    })
+    $('.icon-wrap').on('click', function(event) {
+        if (!$('.bottom-burger').hasClass('bottom-burger-active')) {
+            $('.bottom-burger').addClass('bottom-burger-active');
+        }else{
+            $('.bottom-burger').removeClass('bottom-burger-active');
+        }
+    })
+ 
+
   const mainMenu = document.getElementById('main-menu');
   let overlay = document.getElementById('overlay');
   let menuOverlay = document.getElementById('menuOverlay');

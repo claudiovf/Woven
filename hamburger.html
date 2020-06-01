@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>hamburger</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+          /*
+                START OF HAMBURGER
+                */
+                .icon-wrap {
+                    height: 1.2em;
+                    max-height: 1.2em;
+                    max-width: 2.5em;
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .top-burger {
+                    transition: all 0.5s;
+                    width: 25px;
+                    height: 3px;
+                    background-color: black;
+                    display: inline-block;
+                    position: relative;
+            
+                }
+                .top-burger-active {
+                    transition: all 0.5s;
+                    width: 25px;
+                    height: 3px;
+                    transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    top: 0.59em;
+                }
+                .mid-burger {
+                    transition: all 0.5s;
+                    width: 25px;
+                    height: 3px;
+                    background-color: black;
+                    display: inline-block;
+                    position: relative;
+            
+                }
+                .mid-burger-active {
+                    opacity: 0;
+                }
+                .bottom-burger {
+                    transition: all 0.5s;
+                    width: 25px;
+                    height: 3px;
+                    background-color: black;
+                    display: inline-block;
+                    position: relative;
+            
+                }
+                .bottom-burger-active {
+                    transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                    top: -0.45em;
+                }
+                            /*
+                    END OF HAMBURGER
+                    */
+ 
+        </style>
+    </head>
+    <body>
+        
+            <div id="icon-wrap" class="icon-wrap">
+                <span id="top-burger" class="top-burger"></span>
+                <div id="mid-burger" class="mid-burger"></div>
+                <div id="bottom-burger" class="bottom-burger"></div>
+            </div>
+        <script>
+
+    $('.icon-wrap').on('click', function(event) {
+        if (!$('.top-burger').hasClass('top-burger-active')) {
+            $('.top-burger').addClass('top-burger-active');
+        }else{
+            $('.top-burger').removeClass('top-burger-active');
+        }
+    })
+    $('.icon-wrap').on('click', function(event) {
+        if (!$('.mid-burger').hasClass('mid-burger-active')) {
+            $('.mid-burger').addClass('mid-burger-active');
+        }else{
+            $('.mid-burger').removeClass('mid-burger-active');
+        }
+    })
+    $('.icon-wrap').on('click', function(event) {
+        if (!$('.bottom-burger').hasClass('bottom-burger-active')) {
+            $('.bottom-burger').addClass('bottom-burger-active');
+        }else{
+            $('.bottom-burger').removeClass('bottom-burger-active');
+        }
+    })
+        </script>
+    </body>
+</html>

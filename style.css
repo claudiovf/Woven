@@ -336,8 +336,8 @@ html {
     padding-top: 1rem;
 }
 .menu {
-    width: 10rem;
-    height: 5rem;
+    width: 5rem;
+    height: 1.9rem;
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
@@ -827,3 +827,63 @@ html {
     height: 250px;
     position: relative;
 }
+
+
+            /*
+                START OF HAMBURGER
+                */
+                .icon-wrap {
+                    height: 1.2em;
+                    max-width: 2.5em;
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .top-burger {
+                    transition: all 0.5s;
+                    width: 25px;
+                    height: 3px;
+                    background-color: black;
+                    display: inline-block;
+                    position: relative;
+            
+                }
+                .top-burger-active {
+                    transition: all 0.5s;
+                    width: 25px;
+                    height: 3px;
+                    transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    top: 0.55em;
+                }
+                .mid-burger {
+                    transition: all 0.5s;
+                    width: 25px;
+                    height: 3px;
+                    background-color: black;
+                    display: inline-block;
+                    position: relative;
+            
+                }
+                .mid-burger-active {
+                    opacity: 0;
+                }
+                .bottom-burger {
+                    transition: all 0.5s;
+                    width: 25px;
+                    height: 3px;
+                    background-color: black;
+                    display: inline-block;
+                    position: relative;
+            
+                }
+                .bottom-burger-active {
+                    transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                    top: -0.5em;
+                }
+                            /*
+                    END OF HAMBURGER
+                    */
