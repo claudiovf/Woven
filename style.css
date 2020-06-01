@@ -145,7 +145,7 @@ html {
         padding-top: 10rem;
     }
 }
-@media screen and (max-height: 550px) {
+@media screen and (max-height: 620px) {
     .list-item a {
         font-size: 3rem;
     }
