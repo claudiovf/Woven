@@ -145,32 +145,15 @@ html {
         padding-top: 10rem;
     }
 }
-@media screen and (max-height: 600px) {
-    .list-item a {
-        font-size: 3rem;
-    }
-    .list-item p {
-        display: none;
-    }
-    .list-item {
-        height: 5rem;
-    }
-    .menu-spacer {
-        display: none;
-    }
-    .request {
-        padding-top: 4rem;
-    }
-}
 @media screen and (max-height: 700px) {
     .list-item a {
         font-size: 3rem;
     }
     .list-item p {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .list-item {
-        height: 5rem;
+        height: 4.5rem;
     }
     .menu-spacer {
         display: none;
@@ -179,6 +162,7 @@ html {
         padding-top: 4rem;
     }
 }
+
 .request-btn {
     background-color: rgba(26, 161, 111, 0.849);
     padding: 1.6rem 2rem 1.6rem 2rem;
