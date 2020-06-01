@@ -2,6 +2,9 @@
 @font-face { font-family: Lato ; src: url('fonts/Lato/Lato-Regular.ttf'); } 
 @font-face { font-family: "Crimson Text" ; src: url('fonts/Crimson_Text/CrimsonText-Regular.ttf'); } 
 
+html {
+    font-size: 10px;
+}
 .body {
     background-color: #E5E5E5;
     width: 100vw;
@@ -41,7 +44,6 @@
 .active {
     visibility: visible;
     background-color: rgba(255, 255, 255, 0.950);
-    
 }
 .menu-overlay {
     width: 100%;
@@ -61,9 +63,10 @@
     display: flex;
 }
 
+
 .menu-list {
     width: 100vw;
-    height: 75%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,34 +74,60 @@
     align-content: center;
     padding: 0;
 }
+.menu-spacer {
+    height: 10rem;
+    min-height: 10vh;
+    width: 100%;
+    display: block;
+}
  .list-item {
-     height: 6em;
+     height: 10rem;
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 .list-item p {
     font-family: "Crimson Text";
     font-style: italic;
-    font-size: 2ex;
+    font-size: 2rem;
     margin-bottom: -10px;
     color: rgb(26, 161, 112);
 }
 .list-item a {
     color: rgba(0, 0, 0, 0.151);
     font-weight: "Regular";
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-family: "Lato";
     transition: color 0.5s ease;
     letter-spacing: 5px;
 }
-/* @media screen and (max-height: 700px) {
+@media screen and (max-width: 600px) {
     .list-item a {
-        font-size: 2rem;
+        font-size: 4rem;
     }
-} */
+    .list-item p {
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .list-item a {
+        font-size: 3rem;
+    }
+    .list-item p {
+        display: none;
+    }
+    .list-item {
+        height: 5rem;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    .list-item {
+        height: 20rem;
+    }
+}
 .list-item a:hover {
     color: rgba(0, 0, 0, 0.877);
 }
@@ -109,18 +138,41 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 5rem;
+}
+@media screen and (min-width: 2000px){
+    .request {
+        padding-top: 10rem;
+    }
+}
+@media screen and (max-height: 700px) {
+    .list-item a {
+        font-size: 3rem;
+    }
+    .list-item p {
+        display: none;
+    }
+    .list-item {
+        height: 5rem;
+    }
+    .menu-spacer {
+        display: none;
+    }
+    .request {
+        padding-top: 4rem;
+    }
 }
 .request-btn {
     background-color: rgba(26, 161, 111, 0.849);
-    padding: 1.1rem 1.5rem 1.1rem 1.5rem;
+    padding: 1.6rem 2rem 1.6rem 2rem;
     display: block;
     text-align: center;
     align-content: center;
     color: rgba(255, 255, 255, 0.925);
     font-weight: "Regular";
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: "Lato";
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     border-radius: 2px;
 }
 .social {
@@ -133,6 +185,7 @@
     font-family: "Crimson Text";
     font-style: italic;
     color: black;
+    padding-top: 2rem;
 }
 .social a {
     width: 9rem;
@@ -190,7 +243,7 @@
     justify-content: center;
     align-items: center;
     font-weight: "Regular";
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-family: "Lato";
     letter-spacing: 3px;
     transition: all 0.3s ease-out;
@@ -399,7 +452,9 @@
 }
 .front-gallery-header p {
     text-align: center;
-    font-size: x-large;
+    font-family: "Lato";
+    font-size: 2.5rem;
+    letter-spacing: 2px;
 }
 .front-gallery-nav {
     background-color: #E5E5E5;
@@ -410,7 +465,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-family: "Lato";
+    font-size: 1.5rem;
+    letter-spacing: 2px;
 }
+
 .sort-by {}
 
 .right-sort {
@@ -419,9 +478,29 @@
 }
 .all-films{}
 .all-stories {
-    width: 10rem;
+    width: 20rem;
     justify-content: flex-end;
     text-align: end;
+}
+@media screen and (max-width: 500px) {
+    .front-gallery-nav {
+        flex-direction: column;
+    }
+    .right-sort {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .all-films{
+        width: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    .all-stories {
+        width: auto;
+        justify-content: center;
+        text-align: center;
+    }
 }
 .front-gallery-items {
     background-color: #E5E5E5;
@@ -476,7 +555,7 @@
 .front-gallery-panel:hover #read-more {
     font-family: "Lato";
     color: rgb(26, 161, 112);
-    font-size: 22px;
+    font-size: 2.5rem;
     font-weight: bold;
     opacity: 1;
     position: relative;
@@ -523,7 +602,7 @@
 .artist {
     color: rgb(100, 100, 100);
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1.5rem;
     font-family: Lato;
     letter-spacing: 1.5px;
 
@@ -531,7 +610,7 @@
 .categ {
     color: rgb(0, 0, 0);
     font-weight: light;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-family: "Lato";
     padding-left: 5px;
     letter-spacing: 1.5px;
@@ -539,10 +618,10 @@
 
 .article{
     color: rgb(0, 0, 0);
-    width: 15rem;
+    width: 25rem;
     font-family: "Crimson Text";
     font-weight: regular;
-    font-size: 3ex ;
+    font-size: 2.5rem;
     margin-top: 1rem;
     border-bottom: 2.5px solid rgb(26, 161, 112);
     letter-spacing: 1.5px;
@@ -553,7 +632,7 @@
     flex: 1;
     color: rgb(0, 0, 0);
     font-weight: light;
-    font-size: 2ex;
+    font-size: 1.5rem;
     font-family: "Lato";
     margin-top: 5px;
     letter-spacing: 1.5px;
@@ -562,6 +641,9 @@
     text-align: end;
     flex: 2;
     position: relative;
+    font-family: "Crimson Text";
+    font-size: 1.5rem;
+    font-style: italic;
 }
 
 @media screen and (max-width: 800px) {
@@ -585,6 +667,7 @@
     }
     .article {
         font-size: 15px;
+        width: 15rem;
     }
     .date {
         font-size: 11px;
