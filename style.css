@@ -85,7 +85,7 @@ html {
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
 .list-item p {
