@@ -470,13 +470,21 @@ html {
     letter-spacing: 2px;
 }
 
-.sort-by {}
+.sort-by {
+    font-family: "Lato";
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
 
 .right-sort {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
+    font-family: "Lato";
+    font-size: 1.5rem;
+    letter-spacing: 2px;    
 }
 .all-films{}
+
 .all-stories {
     width: 20rem;
     justify-content: flex-end;
@@ -485,21 +493,50 @@ html {
 @media screen and (max-width: 500px) {
     .front-gallery-nav {
         flex-direction: column;
+        height: 12rem;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
     }
     .right-sort {
         flex-direction: column;
         justify-content: center;
         width: 100%;
     }
+    .sort-by {
+        border-bottom: 1px solid rgb(82, 80, 80);
+        width: 100%;
+        height: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: 1.2rem
+    }
     .all-films{
         width: auto;
-        justify-content: center;
-        text-align: center;
+        justify-content: flex-end;
+        text-align: left;
+        border-bottom: 1px solid rgb(82, 80, 80);
+        height: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: 1.2rem;
     }
     .all-stories {
         width: auto;
-        justify-content: center;
-        text-align: center;
+        justify-content: end;
+        text-align: left;
+        border-bottom: 1px solid rgb(82, 80, 80);
+        height: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: 1.2rem
     }
 }
 .front-gallery-items {
