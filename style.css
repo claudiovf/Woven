@@ -458,7 +458,9 @@ html {
 }
 .front-gallery-nav {
     background-color: #E5E5E5;
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     height: 3vh;
     min-height: 60px;
     display: flex;
@@ -541,16 +543,23 @@ html {
 }
 .front-gallery-items {
     background-color: #E5E5E5;
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     height: auto;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
+}
+@media screen and (max-width: 500px) {
+    .front-gallery-items {
+        width: 100%;
+        margin: 0;
+    }
 }
 .front-gallery-panel {
     width: 42vw;
-    max-width: 800px;
+    max-width: 600px;
     height: 70vh;
     max-height: 700px;
     background-color: white;
