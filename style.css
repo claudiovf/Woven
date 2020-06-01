@@ -145,12 +145,29 @@ html {
         padding-top: 10rem;
     }
 }
-@media screen and (max-height: 620px) {
+@media screen and (max-height: 600px) {
     .list-item a {
         font-size: 3rem;
     }
     .list-item p {
         display: none;
+    }
+    .list-item {
+        height: 5rem;
+    }
+    .menu-spacer {
+        display: none;
+    }
+    .request {
+        padding-top: 4rem;
+    }
+}
+@media screen and (max-height: 700px) {
+    .list-item a {
+        font-size: 3rem;
+    }
+    .list-item p {
+        font-size: 1.3rem;
     }
     .list-item {
         height: 5rem;
