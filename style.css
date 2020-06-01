@@ -81,7 +81,7 @@ html {
     display: block;
 }
  .list-item {
-     height: 8rem;
+     height: 6rem;
     list-style: none;
     display: flex;
     flex-direction: column;
