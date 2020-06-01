@@ -41,13 +41,19 @@ $(window).scroll(function() {
 
     $('.icon-search').on('click', function(event) {
         if (!$('.top-line').hasClass('top-line-active')) {
+            // if ($('menu-overlay').hasClass('active-menu')) {
+            //     $('menu').removeClass('active-menu');
+            //     $('.top-line').removeClass('top-line-active');
+            //     $('.search').css("background-image", "url(images/magnifier.png)");
+            //     $('.search').css("background-color", "none");
+            // }
             $('.top-line').addClass('top-line-active');
             $('.search').css("background-image", "none");
             $('.search').css("background-color", "rgba(255, 255, 255, 0.955)");
         }else{
-            $('.top-line').removeClass('top-line-active');
-            $('.search').css("background-image", "url(images/magnifier.png)");
-            $('.search').css("background-color", "none");
+                $('.top-line').removeClass('top-line-active');
+                $('.search').css("background-image", "url(images/magnifier.png)");
+                $('.search').css("background-color", "none");
         }
     })
     $('.icon-search').on('click', function(event) {
@@ -63,12 +69,18 @@ $(window).scroll(function() {
   let menuOverlay = document.getElementById('menuOverlay');
   let searchNav = document.getElementById('search');
   let searchOverlay = document.getElementById('search-overlay');
-
-
+  let topLine = document.getElementById('top-line');
+  let bottomLine = document.getElementById('bottom-line');
+  let topBurger = document.getElementById('top-burger');
+  let midBurger = document.getElementById('mid-burger');
+  let bottomBurger = document.getElementById('bottom-burger');
   function toggleMenu() {
       if(searchOverlay.classList.contains('active-search')) {
           searchOverlay.classList.remove('active-search');
           overlay.classList.remove('active2');
+          searchNav.style.backgroundImage = "url(images/magnifier.png)";
+          topLine.classList.remove('top-line-active');
+          bottomLine.classList.remove('bottom-line-active');
           overlay.classList.toggle('active');
           menuOverlay.classList.toggle('active-menu');
       }else{
@@ -81,6 +93,9 @@ $(window).scroll(function() {
       if(menuOverlay.classList.contains('active-menu')) {
           menuOverlay.classList.remove('active-menu');
           overlay.classList.remove('active');
+          topBurger.classList.remove('top-burger-active');
+          midBurger.classList.remove('mid-burger-active');
+          bottomBurger.classList.remove('bottom-burger-active');
           overlay.classList.toggle('active2');
           searchOverlay.classList.toggle('active-search');
       }else{

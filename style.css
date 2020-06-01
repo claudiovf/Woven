@@ -367,6 +367,12 @@ html {
     font-size: 2rem;
 
 }
+@media screen and (max-width: 500px) {
+    #search-field {
+        width: 25rem;
+        font-size: 2rem;
+    }
+}
 /*
     END OF SEARCH OVERLAY
 */
@@ -458,6 +464,7 @@ html {
     background-position: center;
     transition: all 0.4s ease-out;
 }
+
 .cart {
     width: 10rem;
     height: 5rem;
