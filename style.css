@@ -460,7 +460,7 @@ html {
     padding-left: 15rem;
     font-family: "Crimson Text";
     font-weight: regular;
-    font-size: 2rem;
+    font-size: 1.8em;
 }
 
 .right-front-about {
@@ -472,14 +472,14 @@ html {
     align-content: flex-start;
     font-family: "Crimson Text";
     font-weight: regular;
-    font-size: 2rem;
+    font-size: 1.8em;
     
 }
 .right-front-about h4 {
     margin-top: 2rem;
     color: rgb(0, 0, 0);
     font-weight: light;
-    font-size: 1.5rem;
+    font-size: 0.7em;
     font-family: "Lato";
 }
 .right-front-about p {
