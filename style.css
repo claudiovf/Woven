@@ -454,13 +454,13 @@ html {
     width: 50%;
     display: flex;
     flex: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     padding-top: 3rem;
-    padding-left: 15rem;
+    padding-right: 15rem;
     font-family: "Crimson Text";
     font-weight: regular;
-    font-size: 1.8em;
+    font-size: 1.7em;
 }
 
 .right-front-about {
@@ -472,7 +472,7 @@ html {
     align-content: flex-start;
     font-family: "Crimson Text";
     font-weight: regular;
-    font-size: 1.8em;
+    font-size: 1.7em;
     
 }
 .right-front-about h4 {
@@ -483,7 +483,7 @@ html {
     font-family: "Lato";
 }
 .right-front-about p {
-    margin-top: -20px;
+    margin-top: -1rem;
 }
 
 @media screen and (max-width: 600px) {
