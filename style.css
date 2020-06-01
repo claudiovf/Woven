@@ -91,14 +91,14 @@ html {
 .list-item p {
     font-family: "Crimson Text";
     font-style: italic;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     margin-bottom: -10px;
     color: rgb(26, 161, 112);
 }
 .list-item a {
     color: rgba(0, 0, 0, 0.151);
     font-weight: "Regular";
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: "Lato";
     transition: color 0.5s ease;
     letter-spacing: 5px;
