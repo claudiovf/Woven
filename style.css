@@ -4,6 +4,7 @@
 
 html {
     font-size: 10px;
+    display: block;
 }
 .body {
     background-color: #E5E5E5;
@@ -262,8 +263,7 @@ html {
 .header {
     background-color: white;
     width: 100vw;
-    height: 7vh;
-    min-height: 70px;
+    height: 5rem;
     position: fixed;
     z-index: 1000;
     display: flex;
@@ -274,7 +274,7 @@ html {
     box-shadow: 2px 2px 1px 0.2px rgba(0, 0, 0, 0.041);
     color: rgb(0, 0, 0);
     font-weight: light;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-family: "Lato";
 }
 
