@@ -150,3 +150,28 @@ $('.shop-overlay').on('mouseleave', function(event) {
         // $('#site-overlay').removeClass('active');
     }
 });
+
+$('.start-prev').on('mouseenter', function(event) {
+    if (!$('.prev-line1').hasClass('prev-line1-active')){
+    $('.prev-line1').addClass('prev-line1-active')
+    $('.prev-line2').addClass('prev-line2-active');
+    }
+});
+$('.start-prev').on('mouseleave', function(event) {
+    if ($('.prev-line1').hasClass('prev-line1-active')){
+    $('.prev-line1').removeClass('prev-line1-active')
+    $('.prev-line2').removeClass('prev-line2-active');
+    }
+});
+$('.start-next').on('mouseenter', function(event) {
+    if (!$('.next-line1').hasClass('next-line1-active')){
+    $('.next-line1').addClass('next-line1-active')
+    $('.next-line2').addClass('next-line2-active');
+    }
+});
+$('.start-next').on('mouseleave', function(event) {
+    if ($('.next-line1').hasClass('next-line1-active')){
+    $('.next-line1').removeClass('next-line1-active')
+    $('.next-line2').removeClass('next-line2-active');
+    }
+});

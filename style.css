@@ -1,6 +1,8 @@
 
 @font-face { font-family: Lato ; src: url('fonts/Lato/Lato-Regular.ttf'); } 
+@font-face { font-family: "Lato Light" ; src: url('fonts/Lato/Lato-Light.ttf'); } 
 @font-face { font-family: "Crimson Text" ; src: url('fonts/Crimson_Text/CrimsonText-Regular.ttf'); } 
+@font-face { font-family: "Crimson Text SB" ; src: url('fonts/Crimson_Text/CrimsonText-SemiBold.ttf'); } 
 
 html {
     font-size: 10px;
@@ -29,7 +31,7 @@ html {
     width: 100vw;
     height: 100vh;
     position: relative;
-    z-index: 998;
+    z-index: 10003;
     background-size: cover;
     position: fixed;
     display: flex;
@@ -223,7 +225,8 @@ html {
     transition: transform 0.5s ease-out,
                 visibility 1s ease-out;
     transform: translateY(-100%);
-    background-color: rgba(255, 255, 255, 0.950)
+    background-color: rgba(255, 255, 255, 0.950);
+    z-index: 10003;
 }
 
 .active-shop {
@@ -330,6 +333,7 @@ html {
     background-position-y: top;
     transition: transform 0.5s ease-out,
                 visibility 1s ease-out;
+    z-index: 10003;
 }
 
 .active-search {
@@ -400,7 +404,7 @@ textarea:focus, input:focus{
     width: 100vw;
     height: 5rem;
     position: fixed;
-    z-index: 1000;
+    z-index: 10004;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -519,15 +523,186 @@ textarea:focus, input:focus{
     margin-right: 2.5vw;
     height: 95vh;
     position: fixed;
+    /* z-index: 997; */
 }
 .start-spacer {
     height: 95vh;
     width: 95%;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
-    z-index: 5;
     background-color: #FFF;
     opacity: 0;
+}
+.start-wrap {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    position: fixed;
+    z-index: 10001;
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: 
+        "prev blank next"
+        "prev story next"
+        "prev read  next";
+    justify-items: center;
+    align-items: center;
+    font-family: "Lato";
+    color: white;
+    
+}
+
+
+.start-prev {
+    grid-area: prev;
+    transform: rotate(-90deg);
+    font-size: 1.3rem;
+    z-index: 11000;
+    height: 3rem;
+    width: 5rem;
+    width: auto;
+    cursor: pointer;
+    overflow: hidden;
+} 
+
+.prev-line1 {
+    display: inline-block;
+    height: 3.5rem;
+    width: 0.18rem;
+    border-radius: 2px;
+    background-color: white;
+    transform: rotate(-90deg);
+    top: -1.3rem;
+    right: -7.5rem;
+    position: relative;
+    transition: all 0.5s ease-out;
+}
+.prev-line1-active {
+    right: -1.5rem;
+}
+.prev-line2 {
+    display: inline-block;
+    height: 3.5rem;
+    width: 0.18rem;
+    border-radius: 2px;
+    background-color: white;
+    transform: rotate(-90deg);
+    top: -1.3rem;
+    right: -1.3rem;
+    position: relative;
+    transition:  0.5s ease-out;
+    margin-right: 2rem;
+}
+.prev-line2-active {
+    right: 5rem;
+}
+.start-article {
+    grid-area: story;
+    display: inline-block;
+    position: relative;
+    align-self: flex-end;
+    height: 6rem;
+    font-family: "Crimson Text SB";
+    font-size: 5rem;
+    padding-bottom: 2rem;
+    letter-spacing: 2px;
+    font-stretch: expanded;
+}
+.start-btn {
+    grid-area: read;
+    display: inline-block;
+    position: relative;
+    align-self: flex-start;
+    font-size: 1.3rem;
+    font-family: "Lato";
+    border: 2px solid white;
+    padding: 0.9rem 1.9rem 0.9rem 1.9rem;
+    transition: all 0.4s ease-in;
+    background-color: rgba(255, 255, 255, 0);
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.start-btn:hover {
+    background-color: white;
+    color: black;
+    font-family: "Lato";
+}
+.start-next {
+    grid-area: next;
+    transform: rotate(90deg);
+    font-size: 1.3rem;
+    z-index: 11000;
+    height: 3rem;
+    width: 5rem;
+    width: auto;
+    cursor: pointer;
+    overflow: hidden;
+} 
+
+.next-line1 {
+    display: inline-block;
+    height: 3.5rem;
+    width: 0.18rem;
+    border-radius: 2px;
+    background-color: white;
+    transform: rotate(-90deg);
+    top: -1.3rem;
+    right: -1.5rem;
+    position: relative;
+    transition: all 0.5s ease-out;
+}
+.next-line1-active {
+    right: -7.5rem;
+}
+.next-line2 {
+    display: inline-block;
+    height: 3.5rem;
+    width: 0.18rem;
+    border-radius: 2px;
+    background-color: white;
+    transform: rotate(-90deg);
+    top: -1.3rem;
+    right: 5rem;
+    position: relative;
+    transition:  0.5s ease-out;
+    margin-right: 2rem;
+}
+.next-line2-active {
+    right: -1.3rem;
+}
+@media screen and (max-width: 500px) {
+ 
+    .start-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    background: none;
+    }
+
+    .start-prev {
+        display: none;
+    }
+    .start-next {
+        display: none;
+    }
+    .start-article {
+        position: relative;
+        top: 10rem;
+        align-self: center;
+        height: auto;
+    }
+    .start-btn {
+        height: auto;
+        top: 10rem;
+        position: relative;
+        align-self: center;
+    }
+    .start-spacer {
+        position: fixed;
+    }
 
 }
 
@@ -540,6 +715,7 @@ textarea:focus, input:focus{
     flex-direction: row;
     justify-content: space-evenly;
     position: relative;
+    z-index: 10003;
     
 }
 
@@ -615,6 +791,7 @@ textarea:focus, input:focus{
     justify-content: flex-start;
     align-items: baseline;
     position: relative;
+    z-index: 10003;
 }
 
 .front-gallery-header {
@@ -920,6 +1097,7 @@ textarea:focus, input:focus{
     width: 100%;
     height: 250px;
     position: relative;
+    z-index: 10003;
 }
 
 
